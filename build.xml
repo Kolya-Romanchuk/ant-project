@@ -48,7 +48,7 @@
 		</junit>
 	</target>
 
-	<target name="package" depends="compile">
+	<target name="package" depends="test">
 		<jar destfile="${build}/${ant.project.name}.jar" basedir="${classes}">
 			<manifest>
 				<attribute name="Main-Class" value="${main-class}"/>
